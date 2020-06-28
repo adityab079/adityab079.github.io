@@ -30,9 +30,11 @@
             href="https://fonts.googleapis.com/css?family=Text+Me+One"
         />
         <link rel="stylesheet" href="./style.css" />
-        <link rel="stylesheet" href="./menu.css" />
+        <!-- <link rel="stylesheet" href="./menu.css" /> -->
+        <link rel="stylesheet" href="./m2.css" />
         <link rel="stylesheet" href="./card.css" />
     </head>
+
     <body>
         <!-- partial:index.partial.html -->
 
@@ -98,7 +100,7 @@
         </nav> -->
 
         <div id="home" class="header">
-            <navbar class="nav">
+            <!-- <navbar class="nav">
                 <ul>
                     <li><a>Aditya Bajaj</a></li>
                     <li style="float: right;">
@@ -114,7 +116,32 @@
                         <a href="#about" class="menu-link">About</a>
                     </li>
                 </ul>
-            </navbar>
+            </navbar> -->
+            <div class="nav-wrap fixed-top">
+                <a class="toggle-nav js-nav">
+                    <div class="bar" style="margin-top: 50%;"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </a>
+                <nav class="menu">
+                    <ul>
+                      <li >
+                        <a href="#about" class="menu-link">About</a>
+                    </li> 
+                    <li >
+                        <a href="#education" class="menu-link">Education</a>
+                    </li>                 
+                    
+                    <li >
+                        <a href="#portfolio" class="menu-link">Portfolio</a>
+                    </li>
+                    <li >
+                        <a href="#contacts" class="menu-link">Contact</a>
+                    </li>
+
+                    </ul>
+                </nav>
+            </div>
             <div id="particles-js"></div>
 
             <!-- <nav class="menu-opener">
@@ -194,8 +221,8 @@
                 <div class="container-fluid">
                     <div class="row justify-content-center">
                         <div class="col-lg-8 col-10 mb-20 text-center">
-                            Hello there, my name is Aditya Bajaj, near the beautiful Amalfi Coast. I'm mainly
-                            a Front-End Developer with some experience in Web
+                            Hello there, I'm Aditya Bajaj, an aspiring Software Developer, currently based in the United States.
+                            I'm mainly Front-End Developer with some experience in Web
                             Application Development using
                             <strong>AngularJS</strong>. I have good mastery of
                             <strong>HTML5</strong>, <strong>CSS3</strong> and
@@ -229,41 +256,41 @@
                     <div class="timeline-img">
                         <i class="fa fa-graduation-cap edu-icon"></i>
                     </div>
-                    <div class="timeline-content wow bounceInLeft">
+                    <div class="timeline-content wow bounceInLeft" style="color: black;">
                         <div class="row">
-                            <h2 class="col-8" style="color: black;">
-                                University of Mumbai
+                            <h2 class="col-8" style="color: black; line-height: 31.6px;  margin-block-end: 0px;">
+                            Arizona State University    
                             </h2>
                             <div
                                 class="col-4 date"
                                 style="text-align: right; width: max-content;"
                             >
-                                AUG 2015 - MAY 2019
+                                AUG 2019 - MAY 2021
                             </div>
-                        </div>
-                        <p>Bachelor of Computer Engineering</p>
-                        <p>GPA : 7.36/10</p>
+                        </div><br/>
+                        <p>Masters of Software Engineering<br/>
+                        GPA : 3.13/4</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-img">
                         <i class="fa fa-graduation-cap edu-icon"></i>
                     </div>
-                    <div class="timeline-content wow bounceInRight">
+                    <div class="timeline-content wow bounceInRight" style="color: black;">
                         <div style="text-align: right;">
                             <div class="row">
                                 <div
                                     class="col-4 date"
                                     style="text-align: left;"
                                 >
-                                    AUG 2019 - MAY 2021
+                                    AUG 2015 - MAY 2019
                                 </div>
-                                <h2 class="col-8" style="color: black;">
-                                    Arizona State University
+                                <h2 class="col-8" style="color: black; line-height: 31.6px;  margin-block-end: 0px;">
+                                    University of Mumbai
                                 </h2>
                             </div>
-                            <p>Masters of Software Engineering</p>
-                            <p>GPA : 3.13/4</p>
+                            <p>Bachelor of Computer Engineering</p>
+                            <p>GPA : 7.36/10</p>
                         </div>
                     </div>
                 </div>
@@ -286,7 +313,11 @@
                     <div class="row justify-content-center">
                         <section class="project wow zoomIn">
                             <div id="c1" class="card">
-                                <figure class="front" style="background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-09-1024x576.jpg); " >
+                                <figure 
+                                    class="front" 
+                                    style="background-size:cover; background-image:
+                                        linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),  
+                                        url(https://thumbs.dreamstime.com/b/online-learning-course-concept-student-using-computer-laptop-white-blank-screen-training-online-writing-lecture-note-151486217.jpg); " >
                                     <h2 class="cardtitle">
                                         MathX – E Learning App
                                     </h2>
@@ -337,16 +368,21 @@
                                 </figure>
                             </div>
                         </section>
+                                <!-- <figure class="front" style="background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03-768x432.jpg);" > -->
 
                         <section class="project wow zoomIn mx-4">
                             <div id="c2" class="card">
-                                <figure class="front" style="background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03-768x432.jpg);" >
+                                <figure 
+                                    class="front" 
+                                    style="background-size: cover; background-image:
+                                        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                                        url(https://www.wellbeskandi.se/wp-content/uploads/2017/10/Multitasking.jpg);" >
                                     <h2 class="cardtitle" 
                                     >
                                         Stress Detection and Management using
                                         IOT & Machine Learning
                                     </h2>
-                                    <div class="cardimg">
+                                    <div class="card-skills">
                                         <img
                                             src="https://img.icons8.com/color/48/000000/c-programming.png"
                                         />
@@ -402,14 +438,16 @@
                             </div>
                         </section>
                         <!-- <section class="col-lg-4 col-10 containerrr wow rollIn"> -->
+                                    <!-- style="background: radial-gradient(#45657B, #102A3A) repeat;" -->
 
                         <section class="project wow zoomIn">
                             <div id="c3" class="card">
-                                <figure
-                                    class="front"
-                                    style="background: radial-gradient(#45657B, #102A3A) repeat;"
-                                >
-                                    <h2 class="cardtitle">
+                                <figure 
+                                    class="front" 
+                                    style="background-size:cover ; background-image:
+                                        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                                        url(https://www.10wallpaper.com/wallpaper/1366x768/1701/Person_using_laptop_computer-Brand_HD_Wallpaper_1366x768.jpg);" >
+                                    <h2 class="cardtitle" >
                                         Movie Recommendation System
                                     </h2>
                                     <div class="card-skills">
@@ -424,13 +462,14 @@
                                 </figure>
                                 <figure
                                     class="back"
+                                    
                                 >
-                                    <div class="cardhead">
+                                    <div class="cardhead" style="color: black;">
                                         <a>Movie Recommendation System</a
                                         >
                                     </div>
 
-                                    <p class="card-data" style="color: black;">
+                                    <p class="card-data" >
                                         • Built a recommendation system using
                                         Collaborative Filtering, which suggested
                                         movies to a user based on their
@@ -699,8 +738,9 @@
         ></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="./menu-opener.js" defer></script>
-        <script src="./script.js" defer></script>
         <script src="https://code.jquery.com/jquery-1.9.1.js" defer></script>
+        <script src="./menu-opener.js" defer></script>
+        <script src="./script.js" ></script>
+
     </body>
 </html>

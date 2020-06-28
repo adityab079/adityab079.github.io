@@ -61,7 +61,7 @@
     bottom: 0;
     padding: 10px 10px;
 }
-.cardbtn {
+/* .cardbtn {
     font-size: 16px;
     position: absolute;
     right: 0;
@@ -74,16 +74,16 @@
 
 .cardbtn:hover {
     background-color: #aaa;
-}
+} */
 
 /* button styles !!!YOU NEED THEM 
 !!!ALSO YOU NEED TO ADD FONTWESOME */
 .effect {
     text-align: center;
     /* display: inline-block; */
-    font-size: 16px;
+    font-size: 12px;
     position: absolute;
-    width: 120px;
+    width: 25%;
     right: 0;
     bottom: 0;
     border: none;
