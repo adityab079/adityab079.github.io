@@ -50,8 +50,7 @@
     cursor: pointer;
     width: 25px;
     height: 25px;
-    margin: auto;
-    z-index: 1000;
+    z-index: 1;
     /* padding: 23.8px; */
 }
 

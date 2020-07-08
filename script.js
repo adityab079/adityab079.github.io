@@ -122,7 +122,7 @@ $(document).ready(function () {
     //     e.preventDefault();
     //     var targetSelector = $(this).attr("href");
     //     console.log(targetSelector);
-    //     // $(".navbar-collapse").collapse();
+    //     $(".navbar-collapse").collapse();
     //     $("html, body").animate(
     //         {
     //             scrollTop: $(targetSelector).offset().top - 80,
