@@ -22,7 +22,40 @@ $(".toggle-nav").click(function () {
     $(this).toggleClass("animate");
 });
 // ====================================================================
+var lastId,
+    topMenu = $("#navv"),
+    topMenuHeight = topMenu.outerHeight() + 1,
+    menuItems = topMenu.find("nav ul li a"),
+    scrollItems = menuItems.map(function () {
+        var item = $($(this).attr("href"));
+        if (item.length) {
+            return item;
+        }
+    });
 
+// Bind to scroll
+$(window).scroll(function () {
+    var fromTop = $(this).scrollTop() + 150 + topMenuHeight;
+
+    var cur = scrollItems.map(function () {
+        if ($(this).offset().top < fromTop) return this;
+    });
+    cur = cur[cur.length - 1];
+    var id = cur && cur.length ? cur[0].id : "";
+
+    if (lastId !== id) {
+        lastId = id;
+        menuItems
+            .parent()
+            .removeClass("current")
+            .end()
+            .filter("[href=#" + id + "]")
+            .parent()
+            .addClass("current");
+    }
+});
+
+// ====================================================================
 $("#button1").on("click", function () {
     $("#c1").toggleClass("flip");
 });
