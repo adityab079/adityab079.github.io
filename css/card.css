@@ -76,8 +76,6 @@
     background-color: #aaa;
 } */
 
-/* button styles !!!YOU NEED THEM 
-!!!ALSO YOU NEED TO ADD FONTWESOME */
 .effect {
     text-align: center;
     /* display: inline-block; */
@@ -147,7 +145,7 @@
     border-bottom-style: solid;
     border-bottom-width: 3px;
 }
-
+/* 
 .tags .html {
     border-bottom-color: #e34c26;
 }
@@ -156,4 +154,4 @@
 }
 .tags .js {
     border-bottom-color: #8cc84b;
-}
+} */
