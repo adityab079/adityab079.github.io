@@ -29,7 +29,7 @@
     justify-content: flex-end;
 }
 .menu ul li {
-    padding: 15px;
+    padding: 15px 30px;
     line-height: 1;
     margin-left: 0px;
     display: inline-block;
@@ -40,11 +40,30 @@
     text-decoration: none;
     color: #fff;
     font-size: x-large;
-    padding: 30px;
 }
 .menu ul li:hover {
     cursor: pointer;
     background-color: #179be2;
+}
+
+.download:after {
+    content: "\0021e7";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: rotate(180deg);
+    font-size: 15em;
+    opacity: 0;
+    transition: opacity 2s ease-in-out, font-size 2s ease-in-out,
+        top 2s ease-in-out;
+    /* box-sizing: border-box; */
+}
+.download:active:after {
+    font-size: 1em;
+    opacity: 1;
+    transition: none;
+    top: 0.3em;
 }
 
 /*Hamburger Nav Toggle*/
