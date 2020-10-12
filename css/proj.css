@@ -1,0 +1,22 @@
+.media:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.media__body {
+    overflow: hidden;
+}
+
+.media-heading {
+    margin: 0;
+}
+
+.cardd {
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 80%;
+    margin: 20px auto;
+}
+.cardd .media__body {
+    padding-left: 20px;
+}
