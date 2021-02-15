@@ -33,6 +33,7 @@
         <link rel="stylesheet" href="css/menu.css" />
         <link rel="stylesheet" href="css/card.css" />
         <link rel="stylesheet" href="css/tooltip.css" />
+        <link rel="stylesheet" href="css/project.css" />
 
         <link rel="stylesheet" href="css/proj.css" />
         <!-- <link rel="stylesheet" href="css/menu2.css" /> -->
@@ -361,137 +362,136 @@
             <div class="section-heading text-center wow fadeIn">
                 &lt; Projects /&gt;
             </div>
-
-            <!-- P1: Flytr -->
             <div
-                class="media cardd wow bounceInLeft"
-                style="background-color: wheat; color: black"
+                style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-items: center;
+                "
             >
-                <div style="float: left">
-                    <img src="https://iili.io/26DBHB.jpg" alt="" width="200" />
+                <!-- P3: Stress -->
+                <div class="project_card wow bounceInLeft">
+                    <div style="padding: 30px 40px">
+                        <h2 class="title">
+                            Stress Detection and Mgt using IOT & Machine
+                            Learning
+                        </h2>
+                        <ul style="padding-left: 20px">
+                            <li>
+                                Detected stress using fundamentals of IOT and
+                                Machine learning with an accuracy of over 91%.
+                            </li>
+                            <li>
+                                Collected the heartbeat of a person using a
+                                heartbeat sensor and sent the data over to a
+                                server using a NodeMCU chip.
+                            </li>
+                            <li>
+                                Applied KNN algorithm on this data to detect
+                                whether the person could be in stress.
+                            </li>
+                            <li>
+                                Developed an Android application to show the
+                                results of the model, suggest remedies and help
+                                book appointments with local doctors.
+                            </li>
+                        </ul>
+                    </div>
+                    <a style="color: white" class="techstack">
+                        Technologies used: C, Java, Python, Arduino IDE, Android
+                        Studio
+                    </a>
                 </div>
-                <div class="media__body">
-                    <h2 class="media-heading"><strong>Fyltr</strong></h2>
-                    <br />
-                    <h5>
-                        Technologies used:
-                        <i><strong>React, AWS, Python</strong></i>
-                    </h5>
-                    <p style="font-size: 15px">
-                        • Created a website & web extension using React to
-                        suggest charities to a user, depending on the nature of
-                        the news read by them. <br />• Made API calls to scrape
-                        current webpage text, extract keywords & generate
-                        suggestions. <br />• Currently developing a cross
-                        platform mobile application using React Native to
-                        maximize reach. <br />• Accepted into Mozilla’s
-                        Incubator Open Lab program for Startups.
-                    </p>
-                </div>
-            </div>
 
-            <!-- P2: MathX -->
-            <div class="media cardd wow bounceInRight">
-                <div style="float: right">
-                    <img
-                        src="https://thumbs.dreamstime.com/b/online-learning-course-concept-student-using-computer-laptop-white-blank-screen-training-online-writing-lecture-note-151486217.jpg"
-                        alt=""
-                        width="200"
-                    />
+                <!-- P2: MathX -->
+                <div
+                    class="project_card wow bounceInRight"
+                    style="min-height: 347px"
+                >
+                    <div style="padding: 25px 30px">
+                        <h2 class="title">MathX – E Learning App</h2>
+                        <ul style="padding: 10px 20px">
+                            <li>
+                                Designed a Desktop application where students
+                                can learn how to create valid regular
+                                expressions.
+                            </li>
+                            <li>
+                                Implemented Agile methodologies, performed Unit
+                                testing and worked as a Scrum master, for the
+                                project.
+                            </li>
+                            <li>
+                                Used JavaFX 11 for the front-end, and Firebase
+                                DB to get real time results from the cloud.
+                            </li>
+                            <li>
+                                Added functionality for teachers to view
+                                students, track their progress and give them
+                                quizzes.
+                            </li>
+                        </ul>
+                    </div>
+                    <a style="color: white" class="techstack">
+                        Technologies used: Java, Firebase
+                    </a>
                 </div>
-                <div class="media__body">
-                    <h2 class="media-heading">
-                        <strong>MathX – E Learning App</strong>
-                    </h2>
-                    <br />
-                    <h5>
-                        Technologies used:
-                        <i><strong>Java, Firebase</strong></i>
-                    </h5>
-                    <p style="font-size: 15px">
-                        • Designed a Desktop application where students can
-                        learn how to create valid regular expressions.<br />
-                        • Implemented Agile methodologies with various design
-                        patterns, performed Unit testing and worked as a Scrum
-                        master, for the project.
-                        <br />• Used JavaFX 11 for the front-end, and Firebase
-                        DB to get real time results from the cloud. <br />•
-                        Added functionality for teachers to view students, track
-                        their progress and give them quizzes.
-                    </p>
-                </div>
-            </div>
 
-            <!-- P3: Stress -->
-            <div
-                class="media cardd wow bounceInLeft"
-                style="background-color: wheat; color: black"
-            >
-                <div>
-                    <img
-                        src="https://www.wellbeskandi.se/wp-content/uploads/2017/10/Multitasking.jpg"
-                        alt=""
-                        width="200"
-                        height="130"
-                    />
+                <!-- P1: Flytr -->
+                <div class="project_card wow bounceInLeft">
+                    <div style="padding: 25px 30px">
+                        <h2 class="title">Fyltr</h2>
+                        <ul style="padding-left: 20px; padding-bottom: 10px">
+                            <li>
+                                Created a website & web extension using React to
+                                suggest charities to a user, depending on the
+                                nature of the news read by them.
+                            </li>
+                            <li>
+                                Made API calls to scrape current webpage text,
+                                extract keywords & generate suggestions.
+                            </li>
+                            <li>
+                                Currently developing a cross platform mobile
+                                application using React Native to maximize
+                                reach.
+                            </li>
+                            <li>
+                                Accepted into Mozilla’s Incubator Open Lab
+                                program for Startups.
+                            </li>
+                        </ul>
+                    </div>
+                    <a style="color: white" class="techstack">
+                        Technologies used: React, AWS, Python
+                    </a>
                 </div>
-                <div class="media__body">
-                    <h2 class="media-heading">
-                        <strong
-                            >Stress Detection and Management using IOT & Machine
-                            Learning</strong
-                        >
-                    </h2>
-                    <br />
-                    <h5>
-                        Technologies used:
-                        <i
-                            ><strong
-                                >C, Java, Python, Arduino IDE, Android
-                                Studio</strong
-                            ></i
-                        >
-                    </h5>
-                    <p style="font-size: 15px">
-                        • Detected stress using fundamentals of IOT and Machine
-                        learning with an accuracy of over 91%.<br />
-                        • Collected the heartbeat of a person using a heartbeat
-                        sensor and sent the data over to a server using a
-                        NodeMCU chip.
-                        <br />• Applied KNN algorithm on this data to detect
-                        whether the person could be in stress. <br />• Developed
-                        an Android application to show the results of the model,
-                        suggest remedies and help book appointments with local
-                        doctors.
-                    </p>
-                </div>
-            </div>
 
-            <!-- P4: <Movie> -->
-            <div class="media cardd wow bounceInRight">
-                <div style="float: left">
-                    <img
-                        src="https://www.10wallpaper.com/wallpaper/1366x768/1701/Person_using_laptop_computer-Brand_HD_Wallpaper_1366x768.jpg"
-                        alt=""
-                        width="200"
-                    />
-                </div>
-                <div class="media__body l-9">
-                    <h2 class="media-heading">
-                        <strong>Movie Recommendation System</strong>
-                    </h2>
-                    <br />
-                    <h5>
-                        Technologies used:
-                        <i><strong>Python, Pandas, Scikit-Learn</strong></i>
-                    </h5>
-                    <p style="font-size: 15px">
-                        • Built a recommendation system using Collaborative
-                        Filtering, which suggested movies to a user based on
-                        their history.<br />
-                        • Determined similarity between each user & the input
-                        user through the Pearson Correlation Function.
-                    </p>
+                <!-- P4: <Movie> -->
+                <div
+                    class="project_card wow bounceInRight"
+                    style="min-height: 272px"
+                >
+                    <div style="padding: 25px 30px">
+                        <h2 class="title">Movie Recommendation System</h2>
+                        <ul style="padding: 10px 20px">
+                            <li>
+                                Built a recommendation system using
+                                Collaborative Filtering, which suggested movies
+                                to a user based on their history.
+                            </li>
+                            <li>
+                                Determined similarity between each user & the
+                                input user through the Pearson Correlation
+                                Function.
+                            </li>
+                        </ul>
+                    </div>
+                    <a style="color: white" class="techstack">
+                        Technologies used: Python, Pandas, Scikit-Learn
+                    </a>
                 </div>
             </div>
 
@@ -559,9 +559,17 @@
                             </h2>
                             <div
                                 class="col-3 date"
-                                style="text-align: right; width: max-content"
+                                style="
+                                    text-align: right;
+                                    width: max-content;
+                                    background-image: linear-gradient(
+                                        to right,
+                                        #6bccef,
+                                        #179be2
+                                    );
+                                "
                             >
-                                AUG 2020- Present
+                                AUG 2020 - Present
                             </div>
                         </div>
                         <div
@@ -590,11 +598,10 @@
                             hosting, AWS Rekognition for image analysis &
                             Firebase for maintaining a real time NoSQL Database.
                             <br /><br />
-                            Technologies used:<i
-                                ><strong>
-                                    Python, AWS, OpenCV, HTML, CSS, JavaScript,
-                                    Firebase</strong
-                                ></i
+                            Technologies used:
+                            <strong>
+                                Python, AWS, OpenCV, HTML, CSS, JavaScript,
+                                Firebase</strong
                             >
                         </p>
                     </div>
@@ -609,7 +616,17 @@
                         style="color: black"
                     >
                         <div class="row">
-                            <div class="col-4 date" style="text-align: left">
+                            <div
+                                class="col-4 date"
+                                style="
+                                    text-align: left;
+                                    background-image: linear-gradient(
+                                        to right,
+                                        #179be2,
+                                        #6bccef
+                                    );
+                                "
+                            >
                                 FEB 2018 - APR 2018
                             </div>
                             <h2

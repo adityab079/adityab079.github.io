@@ -1,105 +1,383 @@
-<div class="section-content">
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <section class="project wow zoomIn">
-                <div id="c1" class="card">
-                    <!-- https://cdn2.hubspot.net/hub/197281/hubfs/feliphe-schiarolli-445578-unsplash.jpg?width=1139&height=758&name=feliphe-schiarolli-445578-unsplash.jpg -->
-                    <figure
-                        class="front"
-                        style="
-                            background-size: cover;
-                            background-image: linear-gradient(
-                                    rgba(0, 0, 0, 0.7),
-                                    rgba(0, 0, 0, 0.7)
-                                ),
-                                url(https://thumbs.dreamstime.com/b/online-learning-course-concept-student-using-computer-laptop-white-blank-screen-training-online-writing-lecture-note-151486217.jpg);
-                        "
-                    >
-                        <h2 class="cardtitle">MathX – E Learning App</h2>
-                        <div class="card-skills">
-                            <img
-                                src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"
-                            />
-                            <img
-                                src="https://img.icons8.com/color/48/000000/firebase.png"
-                            />
-                        </div>
-                        <button class="effect" id="button1">Read More</button>
-                    </figure>
-                    <figure class="back">
-                        <div class="cardhead">
-                            <a style="color: black">MathX – E Learning App</a>
-                        </div>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Aditya Bajaj Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        />
 
-                        <p class="card-data">
-                            • Designed a Desktop application where students can
-                            learn how to create valid regular expressions.<br />
-                            • Implemented Agile methodologies with various
-                            design patterns, performed Unit testing and worked
-                            as a Scrum master, for the project.
-                            <br />• Used JavaFX 11 for the front-end, and
-                            Firebase DB to get real time results from the cloud.
-                            <br />• Added functionality for teachers to view
-                            students, track their progress and give them
-                            quizzes.
-                        </p>
-                        <div>
-                            <!-- <ul class="tags">
-                                            <li class="html">HTML</li>
-                                            <li class="css">CSS</li>
-                                            <li class="js">JavaScript</li>
-                                        </ul> -->
-                            <button class="effect" id="button2">Back</button>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+        />
+        <!-- <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        /> -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Text+Me+One"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./menu.css" />
+        <link rel="stylesheet" href="./card.css" />
+        <link rel="stylesheet" href="./tooltip.css" />
+
+        <link rel="stylesheet" href="./proj.css" />
+        <link rel="stylesheet" href="./project.css" />
+        <!-- <link rel="stylesheet" href="css/menu2.css" /> -->
+    </head>
+
+    <body>
+        <!-- partial:index.partial.html -->
+
+        <!-- ////////// -->
+        <!-- <nav class="navbar fixed-top navbar-toggleable-xs navbar-light">
+            <button
+                class="navbar-toggler navbar-toggler-right"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarText"
+                aria-controls="navbarText"
+                aria-expanded="true"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">
+                            <span class="label">Home</span>
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            <span class="label">About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">
+                            <span class="label">Education</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">
+                            <span class="label">Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">
+                            <span class="label">Experience</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">
+                            <span class="label">Skills</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">
+                            <span class="label">Resume</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">
+                            <span class="label">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <span class="navbar-text"></span>
+            </div>
+        </nav> -->
+
+        <div id="home" class="header">
+            <!-- <navbar class="nav">
+                <ul>
+                    <li><a>Aditya Bajaj</a></li>
+                    <li style="float: right;">
+                        <a href="#contacts" class="menu-link">Contact</a>
+                    </li>
+                    <li style="float: right;">
+                        <a href="#portfolio" class="menu-link">Portfolio</a>
+                    </li>
+                    <li style="float: right;">
+                        <a href="#education" class="menu-link">Education</a>
+                    </li>
+                    <li style="float: right;">
+                        <a href="#about" class="menu-link">About</a>
+                    </li>
+                </ul>
+            </navbar> -->
+            <div id="navv" class="nav-wrap fixed-top">
+                <a class="toggle-nav js-nav">
+                    <div class="bar" style="margin-top: 50%"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </a>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="#about" class="menu-link">About</a>
+                        </li>
+                        <li>
+                            <a href="#education" class="menu-link">Education</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="menu-link">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#experience" class="menu-link"
+                                >Experience</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#skills" class="menu-link">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#certifications" class="menu-link"
+                                >Certifications</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#contacts" class="menu-link">Contact</a>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank"
+                                href="https://drive.google.com/file/d/1XOnrpC2cYCDlqkQwjakDsozBsbKpJFWL/view?usp=sharing"
+                                class="menu-link button"
+                                download="./Aditya_Bajaj_Resume.pdf"
+                            >
+                                Resume</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="particles-js"></div>
+
+            <!-- <nav class="menu-opener">
+                <div class="menu-opener-inner"></div>
+            </nav>
+            <nav class="menu">
+                <ul class="menu-inner">
+                    <a href="#home" class="menu-link">
+                        <li>Home</li>
+                    </a>
+                    <span class="label">Home</span>
+                    <span class="sr-only">(current)</span>
+
+                    <a href="#about" class="menu-link">
+                        <li href="#about">About</li>
+                    </a>
+                    <a href="#education" class="menu-link">
+                        <li>Education</li>
+                    </a>
+                    <a href="#portfolio" class="menu-link">
+                        <li>Portfolio</li>
+                    </a>
+                    <a href="#" class="menu-link">
+                        <li>Experience</li>
+                    </a>
+                    <a href="#" class="menu-link">
+                        <li>Skills</li>
+                    </a>
+                    <a href="#" class="menu-link">
+                        <li>Resume</li>
+                    </a>
+                    <a href="#contacts" class="menu-link">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </nav> -->
+
+            <div class="header-content">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <img
+                                id="profile-img"
+                                src="../images/IMG_2924.jpg"
+                                class="img-vresponsive rounded-circle"
+                                alt="Aditya Bajaj"
+                            />
                         </div>
-                    </figure>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="name">Hi, I'm Aditya Bajaj</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="title"
+                                >An Aspiring Software Developer</span
+                            >
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <!-- <figure class="front" style="background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03-768x432.jpg);" > -->
+            </div>
+        </div>
 
-            <section class="project wow zoomIn mx-4">
-                <div id="c2" class="card">
-                    <figure
-                        class="front"
-                        style="
-                            background-size: cover;
-                            background-image: linear-gradient(
-                                    rgba(0, 0, 0, 0.8),
-                                    rgba(0, 0, 0, 0.8)
-                                ),
-                                url(https://www.wellbeskandi.se/wp-content/uploads/2017/10/Multitasking.jpg);
-                        "
+        <!-- ============================================================================================================================ -->
+        <!-- ============================================================================================================================ -->
+        <!-- ABOUT -->
+        <!-- ============================================================================================================================ -->
+        <!-- ============================================================================================================================ -->
+
+        <div id="about" name="about" class="section">
+            <div class="section-heading text-center wow fadeIn">
+                &lt; About /&gt;
+            </div>
+            <div class="section-content">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-10 mb-20 text-center">
+                            Hello there, I'm Aditya Bajaj, an aspiring Software
+                            Developer, currently based in the US. I'm currently
+                            pursuing my Masters in Software Engineering at
+                            Arizona State University, USA, after completing my
+                            Bachelors in Computer Engineering from University of
+                            Mumbai, India.
+                            <br /><br />I'm committed to maintaining cutting
+                            edge technical skills and am always looking for
+                            opportunities to leverage my developer skill sets. I
+                            demonstrate quick grasping power & strong work
+                            ethics, along with a good sense of responsibility
+                            and leadership in all of my work. <br /><br />
+                            When I'm not thinking about tech, I'm probably
+                            playing Chess or the Piano, or probably reading some
+                            Jack Reacher novel.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+
+        <!-- ============================================================================================================================ -->
+        <!-- ============================================================================================================================ -->
+        <!-- Education -->
+        <!-- ============================================================================================================================ -->
+        <!-- ============================================================================================================================ -->
+
+        <div id="education" class="section">
+            <div class="section-heading text-center wow fadeIn">
+                &lt; Education /&gt;
+            </div>
+            <br />
+            <div class="timeline container">
+                <div class="timeline-item">
+                    <div class="timeline-img">
+                        <i class="fa fa-graduation-cap edu-icon"></i>
+                    </div>
+                    <div
+                        class="timeline-content wow bounceInLeft"
+                        style="color: black"
                     >
-                        <h2 class="cardtitle">
-                            Stress Detection and Management using IOT & Machine
+                        <div class="row">
+                            <h2
+                                class="col-8"
+                                style="
+                                    color: black;
+                                    line-height: 31.6px;
+                                    margin-block-end: 0px;
+                                "
+                            >
+                                Arizona State University
+                            </h2>
+                            <div
+                                class="col-4 date"
+                                style="text-align: right; width: max-content"
+                            >
+                                AUG 2019 - MAY 2021
+                            </div>
+                        </div>
+                        <br />
+                        <p style="font-size: 15px">
+                            Masters in Software Engineering<br />
+                            <!-- GPA : 3.25/4 -->
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-img">
+                        <i class="fa fa-graduation-cap edu-icon"></i>
+                    </div>
+                    <div
+                        class="timeline-content wow bounceInRight"
+                        style="color: black"
+                    >
+                        <div style="text-align: right">
+                            <div class="row">
+                                <div
+                                    class="col-4 date"
+                                    style="text-align: left"
+                                >
+                                    AUG 2015 - MAY 2019
+                                </div>
+                                <h2
+                                    class="col-8"
+                                    style="
+                                        color: black;
+                                        line-height: 31.6px;
+                                        margin-block-end: 0px;
+                                    "
+                                >
+                                    University of Mumbai
+                                </h2>
+                            </div>
+                            <br />
+                            <p style="font-size: 15px">
+                                Bachelor of Computer Engineering<br />
+                                <!-- GPA : 7.36/10 -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+
+        <!-- ============================================================================================================================ -->
+        <!-- ============================================================================================================================ -->
+        <!-- Projects -->
+        <!-- ============================================================================================================================ -->
+        <!-- ============================================================================================================================ -->
+
+        <div id="portfolio" class="section">
+            <div class="section-heading text-center wow fadeIn">
+                &lt; Projects /&gt;
+            </div>
+            <div
+                style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-items: center;
+                "
+            >
+                <div class="card2" data-card>
+                    <div class="card__body">
+                        <h2 class="card__title">
+                            Stress Detection and Mgt using IOT & Machine
                             Learning
                         </h2>
-                        <div class="card-skills">
-                            <img
-                                src="https://img.icons8.com/color/48/000000/c-programming.png"
-                            />
-                            <img
-                                src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"
-                            />
-                            <img
-                                src="https://img.icons8.com/color/48/000000/python.png"
-                            />
-                            <img
-                                src="https://img.icons8.com/color/48/000000/arduino.png"
-                            />
-                            <img
-                                src="https://img.icons8.com/color/48/000000/android-os.png"
-                            />
-                        </div>
-                        <button class="effect" id="button3">Read More</button>
-                    </figure>
-                    <figure class="back">
-                        <div class="cardhead">
-                            <a style="color: black"
-                                >Stress Detection and Management
-                            </a>
-                        </div>
-
-                        <p class="card-data">
+                        <p>
                             • Detected stress using fundamentals of IOT and
                             Machine learning with an accuracy of over 91%.<br />
                             • Collected the heartbeat of a person using a
@@ -111,60 +389,631 @@
                             of the model, suggest remedies and help book
                             appointments with local doctors.
                         </p>
-                        <div>
-                            <button
-                                class="effect"
-                                style="content: \f177"
-                                id="button4"
-                            >
-                                Back
-                            </button>
-                        </div>
-                    </figure>
-                </div>
-            </section>
-            <!-- <section class="col-lg-4 col-10 containerrr wow rollIn"> -->
-            <!-- style="background: radial-gradient(#45657B, #102A3A) repeat;" -->
-
-            <section class="project wow zoomIn">
-                <div id="c3" class="card">
-                    <figure
-                        class="front"
+                    </div>
+                    <a
                         style="
-                            background-size: cover;
+                            width: 100%;
+                            color: white;
+                            font-size: 16px;
+                            line-height: 30px;
+                            float: inline-start;
+                            padding-left: 20px;
                             background-image: linear-gradient(
-                                    rgba(0, 0, 0, 0.7),
-                                    rgba(0, 0, 0, 0.7)
-                                ),
-                                url(https://www.10wallpaper.com/wallpaper/1366x768/1701/Person_using_laptop_computer-Brand_HD_Wallpaper_1366x768.jpg);
+                                to right,
+                                #179be2,
+                                #6bccef
+                            );
                         "
                     >
-                        <h2 class="cardtitle">Movie Recommendation System</h2>
-                        <div class="card-skills">
-                            <img
-                                src="https://img.icons8.com/color/48/000000/python.png"
-                            />
-                        </div>
-                        <button class="effect" id="button5">Read More</button>
-                    </figure>
-                    <figure class="back">
-                        <div class="cardhead" style="color: black">
-                            <a>Movie Recommendation System</a>
-                        </div>
+                        Technologies used: C, Java, Python, Arduino IDE, Android
+                        Studio
+                    </a>
+                </div>
 
-                        <p class="card-data">
+                <div class="card2" data-card>
+                    <div class="card__body">
+                        <h2 class="card__title">MathX – E Learning App</h2>
+                        <p>
+                            • Designed a Desktop application where students can
+                            learn how to create valid regular expressions.<br />
+                            • Implemented Agile methodologies with various
+                            design patterns, performed Unit testing and worked
+                            as a Scrum master, for the project.
+                            <br />• Used JavaFX 11 for the front-end, and
+                            Firebase DB to get real time results from the cloud.
+                            <br />• Added functionality for teachers to view
+                            students, track their progress and give them
+                            quizzes.
+                        </p>
+                    </div>
+
+                    <footer class="card__footer">
+                        <div
+                            class="card__progress progress"
+                            data-percent="Technologies used: Java, Firebase"
+                        ></div>
+                    </footer>
+                </div>
+
+                <div class="card2" data-card>
+                    <div class="card__body">
+                        <h2 class="card__title">Fyltr</h2>
+                        <p>
+                            • Created a website & web extension using React to
+                            suggest charities to a user, depending on the nature
+                            of the news read by them. <br />• Made API calls to
+                            scrape current webpage text, extract keywords &
+                            generate suggestions. <br />• Currently developing a
+                            cross platform mobile application using React Native
+                            to maximize reach. <br />• Accepted into Mozilla’s
+                            Incubator Open Lab program for Startups.
+                        </p>
+                    </div>
+
+                    <footer class="card__footer">
+                        <div
+                            class="card__progress progress"
+                            data-percent="Technologies used: React, AWS, Python"
+                        ></div>
+                    </footer>
+                </div>
+
+                <div class="card2" data-card>
+                    <div class="card__body">
+                        <h2 class="card__title">Movie Recommendation System</h2>
+                        <p>
                             • Built a recommendation system using Collaborative
                             Filtering, which suggested movies to a user based on
                             their history.<br />
                             • Determined similarity between each user & the
                             input user through the Pearson Correlation Function.
                         </p>
-                        <div>
-                            <button class="effect" id="button6">Back</button>
-                        </div>
-                    </figure>
+                    </div>
+
+                    <footer class="card__footer">
+                        <div
+                            class="card__progress progress"
+                            data-percent="Technologies used: Python, Pandas, Scikit-Learn"
+                        ></div>
+                    </footer>
                 </div>
-            </section>
+            </div>
+            <div class="section-footer text-center">
+                <h4>New awesome projects coming soon..</h4>
+            </div>
         </div>
-    </div>
-</div>
+        <!-- =============================================================== -->
+
+        <!-- <div class="container">
+            <div class="level">
+                <div class="left js--fadeInLeft">
+                    <div class="date">JULY 2018 - AUG 2018</div>
+                    <h3 class="company">
+                        Intern, SKADA Technology Pvt Ltd
+                    </h3>
+                    <div
+                        style="bottom: 0; padding-top: 30px; color: black;"
+                    >
+                        <h5><i class="fa fa-map-marker"></i> Mumbai</h5>
+                    </div>
+                </div>
+                <div class="middle"></div>
+                <div class="right js--fadeInRight" style="color: black;">
+                    • Implemented programs on Raspberry Pi & sensors such as
+                    DHT11 & PIR using Python. <br />• Low cost home
+                    automation alternatives such as Temperature manager &
+                    Smart Lighting systems were designed & developed.
+                </div>
+            </div>
+        </div>
+        <hr /> -->
+
+        <!-- ============================================================================================================================ -->
+        <!-- ============================================================================================================================ -->
+        <!-- Experience -->
+        <!-- ============================================================================================================================ -->
+        <!-- ============================================================================================================================ -->
+        <div id="experience" class="section">
+            <div class="section-heading text-center wow fadeIn">
+                &lt; Experience /&gt;
+            </div>
+            <br />
+            <div class="timeline container">
+                <div class="timeline-item">
+                    <div class="timeline-img">
+                        <i class="fa fa-briefcase work-icon"></i>
+                    </div>
+
+                    <div
+                        class="timeline-content wow bounceInLeft"
+                        style="color: black"
+                    >
+                        <div class="row">
+                            <h2
+                                class="col-9"
+                                style="
+                                    color: black;
+                                    text-align: left;
+                                    line-height: 31.6px;
+                                    margin-block-end: 0px;
+                                "
+                            >
+                                Web & Mobile App Developer
+                            </h2>
+                            <div
+                                class="col-3 date"
+                                style="text-align: right; width: max-content"
+                            >
+                                AUG 2020- Present
+                            </div>
+                        </div>
+                        <div
+                            class="row"
+                            style="margin-top: 5px; font-size: 15px"
+                        >
+                            <a
+                                class="col-9"
+                                style="color: black; text-align: left"
+                            >
+                                Adidas – ASU Center for Engagement Science
+                            </a>
+                            <div class="col-3" style="text-align: right">
+                                <i class="fa fa-map-marker">
+                                    <a>Tempe</a>
+                                </i>
+                            </div>
+                        </div>
+                        <p style="font-size: 15px">
+                            <br />
+                            • Developed a Python program to analyze emotions &
+                            attentiveness of individuals in a meeting. <br />•
+                            Devised an online game to quantify the perception of
+                            various psycho physical metrics in a simulated
+                            dynamic environment. <br />• Used AWS S3 for
+                            hosting, AWS Rekognition for image analysis &
+                            Firebase for maintaining a real time NoSQL Database.
+                            <br /><br />
+                            Technologies used:<i
+                                ><strong>
+                                    Python, AWS, OpenCV, HTML, CSS, JavaScript,
+                                    Firebase</strong
+                                ></i
+                            >
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-img">
+                        <i class="fa fa-briefcase work-icon"></i>
+                    </div>
+                    <div
+                        class="timeline-content wow bounceInRight"
+                        style="color: black"
+                    >
+                        <div class="row">
+                            <div class="col-4 date" style="text-align: left">
+                                FEB 2018 - APR 2018
+                            </div>
+                            <h2
+                                class="col-8"
+                                style="
+                                    color: black;
+                                    text-align: right;
+                                    line-height: 31.6px;
+                                    margin-block-end: 0px;
+                                "
+                            >
+                                Head App Developer
+                            </h2>
+                        </div>
+                        <div
+                            class="row"
+                            style="margin-top: 5px; font-size: 15px"
+                        >
+                            <div class="col-6">
+                                <i
+                                    class="fa fa-map-marker"
+                                    style="text-align: left"
+                                >
+                                </i>
+                                Mumbai
+                            </div>
+                            <a
+                                class="col-6"
+                                style="color: black; text-align: right"
+                            >
+                                Shree Pratishthan NGO
+                            </a>
+                        </div>
+
+                        <p style="font-size: 15px">
+                            <br />
+                            • Designed an Android application using Android
+                            Studio to enable effective communication between the
+                            NGO and its prospective customers. The app is live
+                            on Play Store with nearly 200 downloads.
+                            <br />• Included features such as a Gallery module &
+                            Firebase database for users.
+                            <br /><br />Technologies used:<i
+                                ><strong>
+                                    Android Studio, Java, Firebase</strong
+                                ></i
+                            >
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-img">
+                        <i class="fa fa-briefcase work-icon"></i>
+                    </div>
+
+                    <div
+                        class="timeline-content wow bounceInLeft"
+                        style="color: black"
+                    >
+                        <div class="row">
+                            <h2
+                                class="col-8"
+                                style="
+                                    color: black;
+                                    text-align: left;
+                                    line-height: 31.6px;
+                                    margin-block-end: 0px;
+                                "
+                            >
+                                Intern
+                            </h2>
+                            <div
+                                class="col-4 date"
+                                style="text-align: right; width: max-content"
+                            >
+                                JULY 2018 - AUG 2018
+                            </div>
+                        </div>
+                        <div
+                            class="row"
+                            style="margin-top: 5px; font-size: 15px"
+                        >
+                            <a
+                                class="col-8"
+                                style="color: black; text-align: left"
+                            >
+                                SKADA Technology Pvt Ltd
+                            </a>
+                            <div class="col-4" style="text-align: right">
+                                <i class="fa fa-map-marker">
+                                    <a>Mumbai</a>
+                                </i>
+                            </div>
+                        </div>
+                        <p style="font-size: 15px">
+                            <br />
+                            • Implemented programs on Raspberry Pi & sensors
+                            such as DHT11 & PIR using Python. <br />• Low cost
+                            home automation alternatives such as Temperature
+                            manager & Smart Lighting systems were designed &
+                            developed. <br /><br />
+                            Technologies used:<i
+                                ><strong> Python, C, Raspberry Pi</strong></i
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================================================================================ -->
+        <!-- ============================================================================================================================ -->
+        <!-- Skills -->
+        <!-- ============================================================================================================================ -->
+        <!-- ============================================================================================================================ -->
+        <br />
+
+        <div id="skills" class="section">
+            <div class="section-heading text-center wow fadeIn">
+                &lt; Skills /&gt;
+            </div>
+            <div style="font-size: 1.75rem" class="text-center">
+                <!-- Programming Languages : Python, Java, C, C++, C#, R, SQL<br />
+                Web Technology Skills : HTML5, CSS, JavaScript, PHP, Node.js,
+                React.js, Django, Flask, WordPress<br />
+                Other Tools : Adobe Photoshop, Android Studio, MATLAB, Git,
+                Tableau, Firebase -->
+                <div class="link-cont">
+                    <br />
+                    <div class="link-wrapper wow slideInLeft">
+                        <a class="link" style="padding: 5px"
+                            >Python • Java • C • C++ • C# • R • SQL</a
+                        >
+                    </div>
+                    <div class="link-wrapper wow slideInRight">
+                        <a class="link" style="padding: 5px"
+                            >HTML5 • CSS • JavaScript • PHP • Node.js • React.js
+                            • Django • Flask • WordPress</a
+                        >
+                    </div>
+                    <div class="link-wrapper wow slideInLeft">
+                        <a class="link" style="padding: 5px"
+                            >Adobe Photoshop • Android Studio • MATLAB • Git •
+                            Tableau • Firebase</a
+                        >
+                    </div>
+                </div>
+                <br />
+
+                <!-- Badges by IBM :
+                <button>Applied Data Science with Python</button>
+                <button>Applied Data Science with R</button>
+                <button>Build Your Own Chatbot</button>
+                <button>Deep Learning</button> -->
+            </div>
+        </div>
+        <br />
+
+        <!-- ============================================================================================================================ -->
+        <!-- ============================================================================================================================ -->
+        <!-- Certifications -->
+        <!-- ============================================================================================================================ -->
+        <!-- ============================================================================================================================ -->
+        <div id="certifications" class="section">
+            <div class="section-heading text-center wow fadeIn">
+                &lt; Certifications /&gt;
+            </div>
+            <div style="font-size: 1.75rem" class="text-center">
+                <div class="link-cont wow slideInLeft">
+                    <div class="link-wrapper">
+                        <br />
+                        <!-- Badges by IBM : -->
+                        <a
+                            class="link hover-6"
+                            href="https://www.youracclaim.com/badges/01c1506d-199c-4b15-bf83-62d156d4810a/public_url"
+                            target="_blank"
+                            >Applied Data Science with Python</a
+                        >
+                        •
+                        <a
+                            class="link hover-6"
+                            href="https://www.youracclaim.com/badges/cb9bae82-4506-4b8b-8da8-28e5dc1f90b1/public_url"
+                            target="_blank"
+                            >Applied Data Science with R</a
+                        >
+                        •
+                        <a
+                            class="link hover-6"
+                            href="https://www.youracclaim.com/badges/b6346111-2ef2-4cff-8f1b-50395b44acdf/public_url"
+                            target="_blank"
+                            >Build Your Own Chatbot</a
+                        >
+                        •
+                        <a
+                            class="link hover-6"
+                            href="https://www.youracclaim.com/badges/1ef01d85-a48b-4666-92e6-845bfc25ec36/public_url"
+                            target="_blank"
+                            >Deep Learning</a
+                        >
+                    </div>
+                </div>
+
+                <div class="link-cont">
+                    <div class="link-wrapper wow slideInRight">
+                        <!-- Other certifications: -->
+                        <a
+                            class="link hover-6"
+                            href="https://courses.cognitiveclass.ai/certificates/2d86d53d00f741daaf1a2759a58558cd"
+                            target="_blank"
+                            style="padding-top: 15px"
+                            >Data Analysis with Python</a
+                        >
+                        •
+                        <a
+                            class="link hover-6"
+                            href="https://courses.cognitiveclass.ai/certificates/5c655e1029bd480bb55f4a96341224a4"
+                            target="_blank"
+                            >Data Visualization with Python</a
+                        >
+                        •
+                        <a
+                            class="link hover-6"
+                            href="https://courses.cognitiveclass.ai/certificates/0b58ecf59b83429f83325d77b2cc33ec"
+                            target="_blank"
+                            >Machine Learning with Python</a
+                        >
+                        •
+                        <!-- <a
+                            class="link hover-6"
+                            href="https://courses.cognitiveclass.ai/certificates/f3e5f5be9be84adbba4d4cb2b6da247f"
+                            target="_blank"
+                            >Using R with Databases</a
+                        > -->
+                        <a
+                            class="link hover-6"
+                            href="https://www.udemy.com/certificate/UC-U4I7J05B/"
+                            target="_blank"
+                            style="padding-top: 15px"
+                            >AWS Concepts
+                        </a>
+                        •
+                        <a
+                            class="link hover-6"
+                            href="https://www.udemy.com/certificate/UC-8PQIBYSZ/"
+                            target="_blank"
+                            >AWS Essentials</a
+                        >
+                    </div>
+                </div>
+
+                <div class="link-cont wow slideInLeft">
+                    <div class="link-wrapper">
+                        <!-- <a
+                            class="link hover-6"
+                            href="https://www.udemy.com/certificate/UC-U4I7J05B/"
+                            target="_blank"
+                            style="padding-top: 15px;"
+                            >AWS Concepts
+                        </a>
+                        •
+                        <a
+                            class="link hover-6"
+                            href="https://www.udemy.com/certificate/UC-8PQIBYSZ/"
+                            target="_blank"
+                            >AWS Essentials</a
+                        >
+                        • -->
+                        <a
+                            class="link hover-6"
+                            href="http://coursera.org/verify/8JSWEUEKV8YR"
+                            target="_blank"
+                            style="padding-top: 15px"
+                            >Front-End Web UI Frameworks and Tools: Bootstrap
+                            4</a
+                        >
+                        •
+                        <a
+                            class="link hover-6"
+                            href="http://coursera.org/verify/67WCVGH453ZM"
+                            target="_blank"
+                            >Front-End Web Development with React</a
+                        >
+                        •
+                        <a
+                            class="link hover-6"
+                            href="https://coursera.org/share/295039d113d0b2bc6f3efacd1ab3ef7a"
+                            target="_blank"
+                            >Multiplatform Mobile App Development with React
+                            Native</a
+                        >
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--    <span class="inner-wrapper wrapper-14">
+                    <a
+                        class="link hover-14"
+                        href="http://coursera.org/verify/67WCVGH453ZM"
+                        target="”_blank”"
+                        >Front-End Web Development with React</a
+                    >
+                        <div class="tooltip">
+                        <p>bbbbbbbbbbbbbbbb</p>
+                    </div> 
+                </span> -->
+        <!-- ============================================================================================================================ -->
+        <!-- ============================================================================================================================ -->
+        <!-- Contact Us -->
+        <!-- ============================================================================================================================ -->
+        <!-- ============================================================================================================================ -->
+
+        <div id="contacts" class="section">
+            <div class="section-heading text-center wow fadeIn">
+                <br />
+                &lt; Contacts /&gt;
+            </div>
+            <div class="section-content">
+                <div class="container-fluid">
+                    <div class="row justify-content-center mb-20">
+                        <div class="col-4 text-center wow zoomIn">
+                            <h3 class="subsection-title">AROUND THE WEB</h3>
+                            <h4>
+                                <a
+                                    href="https://www.linkedin.com/in/adityabajaj-1/"
+                                    target="_blank"
+                                    class="fa-stack-link"
+                                >
+                                    <span class="fa-stack">
+                                        <i
+                                            class="fa fa-square-o fa-stack-2x"
+                                        ></i>
+                                        <i
+                                            class="fa fa-linkedin fa-stack-1x"
+                                        ></i>
+                                    </span>
+                                </a>
+                                <a
+                                    href="https://github.com/adityab079"
+                                    target="_blank"
+                                    class="fa-stack-link"
+                                >
+                                    <span class="fa-stack">
+                                        <i
+                                            class="fa fa-square-o fa-stack-2x"
+                                        ></i>
+                                        <i class="fa fa-github fa-stack-1x"></i>
+                                    </span>
+                                </a>
+                            </h4>
+                        </div>
+
+                        <!-- <div
+                            class="mb-20 col-4 col-md-6 col-sm-6 col-12 text-center wow fadeIn"
+                            data-wow-delay="0.3s"
+                        > -->
+                        <div
+                            class="col-4 text-center wow zoomIn"
+                            data-wow-delay="0.3s"
+                        >
+                            <h3 class="subsection-title">CURRENT LOCATION</h3>
+                            <h4 class="location">
+                                <i class="fa fa-map-marker"></i>
+                                Tempe, Arizona, USA
+                            </h4>
+                        </div>
+
+                        <div
+                            class="col-4 text-center wow zoomIn"
+                            data-wow-delay="0.6s"
+                        >
+                            <h3 class="subsection-title">GET IN TOUCH</h3>
+                            <h4>
+                                <a
+                                    class="d-block mb-3"
+                                    href="mailto:alfonso_cerrato@yahoo.it"
+                                >
+                                    <i class="fa fa-paper-plane"></i>
+                                    anbajaj@asu.edu
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer text">
+            <span>Aditya Bajaj &copy; 2020</span>
+        </div>
+        <!-- partial -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+            defer
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+            defer
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
+            defer
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
+            defer
+        ></script>
+        <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            defer
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"
+            defer
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.9.1.js" defer></script>
+        <script src="js/menu-opener.js" defer></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
