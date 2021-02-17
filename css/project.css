@@ -16,7 +16,7 @@
     width: 100%;
     margin: 20px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     position: relative;
 }
 
@@ -28,6 +28,7 @@
 }
 
 .techstack {
+    border-radius: 0 0 10px 10px;
     width: 100%;
     font-size: 16px;
     line-height: 30px;
@@ -37,4 +38,17 @@
     position: absolute;
     bottom: 0;
     margin-top: 10px;
+}
+
+.techstack2 {
+    border-radius: 0 0 10px 10px;
+
+    width: 100%;
+    font-size: 15px;
+    line-height: 30px;
+    float: left;
+    padding-left: 20px;
+    background-image: linear-gradient(to right, #179be2, #6bccef);
+    position: absolute;
+    bottom: 0;
 }
