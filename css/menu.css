@@ -74,7 +74,16 @@
     width: 25px;
     height: 25px;
     z-index: 1;
-    /* padding: 23.8px; */
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+.toggle-nav:focus,
+.toggle-nav:focus-visible,
+.toggle-nav:active {
+    outline: none;
+    box-shadow: none;
 }
 
 .bar {
