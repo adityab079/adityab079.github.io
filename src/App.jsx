@@ -1,12 +1,20 @@
 import { useEffect, useRef, useState } from "react";
-import PortfolioContent from "./PortfolioContent";
+import Home from './sections/Home';
+import About from './sections/About';
+import Experience from './sections/Experience';
+import Education from './sections/Education';
+import Projects from './sections/Projects';
+import Skills from './sections/Skills';
+import Certifications from './sections/Certifications';
+import Contacts from './sections/Contacts';
+import Footer from './sections/Footer';
 import WOW from "wowjs";
 
 const navItems = [
   ["about", "About"],
   ["experience", "Experience"],
   ["education", "Education"],
-  ["portfolio", "Projects"],
+  ["projects", "Projects"],
   ["skills", "Skills"],
   ["certifications", "Certifications"],
   ["contacts", "Contact"],
@@ -238,7 +246,15 @@ function App() {
     <>
       <Navigation />
       <main>
-        <PortfolioContent />
+        <Home />
+        <About />
+        <Experience />
+        <Education />
+        <Projects />
+        <Skills />
+        <Certifications />
+        <Contacts />
+        <Footer />
       </main>
     </>
   );
