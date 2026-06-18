@@ -128,7 +128,7 @@ function Navigation() {
         aria-expanded={isOpen}
         onClick={() => setIsOpen((open) => !open)}
       >
-        <span className="bar" style={{ marginTop: "50%" }} />
+        <span className="bar mt-50-percent" />
         <span className="bar" />
         <span className="bar" />
       </button>

@@ -16,6 +16,7 @@ export default function Home() {
                   src="images/IMG_2924.jpg"
                   className="img-vresponsive rounded-circle"
                   alt="Aditya Bajaj"
+                  loading="lazy"
                 />
               </div>
             </div>

@@ -3,22 +3,14 @@ html {
 }
 
 body {
-    /* background-color: #22313f; */
     background-color: black;
 }
 
 * {
     font-family: "Text Me One", sans-serif;
 }
-/* 
-.navbar-nav {
-    flex-flow: row nowrap;
-} */
-
 .navbar {
     padding: 0;
-    /* flex-flow: row nowrap;
-    display: inline-flex; */
 }
 
 .navbar-light .navbar-toggler {
@@ -188,15 +180,6 @@ hr {
     margin: 1rem 30% 1rem 30%;
 }
 
-/* span.tag {
-    padding: 2px 5px 2px 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    font-size: 1rem;
-    border: 1px solid lightgray;
-    display: inline-block;
-} */
-
 /* ============================================================================== */
 /* Education */
 /* ============================================================================== */
@@ -251,6 +234,8 @@ hr {
     border-radius: 10px;
     background: #f5f5f5;
     box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
 }
 .timeline-content::after {
     content: "";
@@ -315,13 +300,6 @@ hr {
     left: 20px;
 }
 
-/* blockquote {
-    margin-top: 30px;
-    color: #757575;
-    border-left-color: #3f51b5;
-    padding: 0 20px;
-} */
-
 .date {
     /* background: #179be2; */
     background-image: linear-gradient(to right, #179be2, #6bccef);
@@ -363,75 +341,6 @@ hr {
     }
 }
 
-/* ============================================================================== */
-/* Timeline 2 */
-/* ============================================================================== */
-.level {
-    margin-bottom: 10px;
-    position: relative;
-    padding: 5px 0;
-}
-
-.level > div {
-    display: inline-block;
-    box-sizing: border-box;
-}
-
-.level .left {
-    margin-left: 1%;
-    width: calc(49% - 1% - 20px);
-    background: #ededed;
-    /* position: relative; */
-    vertical-align: middle;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.level .left:after {
-    background: #ededed;
-    content: "";
-    width: 10px;
-    height: 10px;
-    transform: translateY(-50%) translateX(-50%) rotate(45deg);
-    top: 50%;
-    position: absolute;
-    left: 100%;
-    z-index: 1;
-}
-
-.level .right {
-    width: calc(49% - 1% - 20px);
-    background: #ededed;
-    margin-left: calc(2% + 40px);
-    position: relative;
-    vertical-align: middle;
-    padding: 10px;
-}
-
-.level .right:after {
-    background: #ededed;
-    content: "";
-    width: 10px;
-    height: 10px;
-    transform: translateY(-50%) translateX(50%) rotate(45deg);
-    top: 50%;
-    position: absolute;
-    right: 100%;
-    z-index: -1;
-}
-
-.middle {
-    width: 2%;
-    background: darkred;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* /////////////////// */
 a {
     color: #bfcad1;
 }
@@ -450,8 +359,27 @@ a:active {
     color: #6bccef;
     text-decoration: none;
 }
-/* /////////////////// */
-/* /////////////////// */
+/* Utility Classes */
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.font-15 { font-size: 15px; }
+.font-1-75rem { font-size: 1.75rem; }
+.padding-5 { padding: 5px; }
+.mt-50-percent { margin-top: 50%; }
+
+/* Timeline Components */
+.timeline-content-black { color: black; padding: 10px 30px; }
+.institution-heading { color: black; line-height: 31.6px; margin-block-end: 0px; }
+.date-right { text-align: right; width: max-content; }
+.date-left { text-align: left; width: max-content; }
+
+/* Experience Components */
+.experience-content { color: black; padding-bottom: 0px; padding-top: 10px; position: relative; }
+.experience-heading { color: black; text-align: left; line-height: 30px; margin-block-end: 0px; }
+.experience-sub-row { margin-top: 5px; font-size: 15px; }
+.experience-company { color: black; text-align: left; }
+.experience-description { font-size: 15px; padding-bottom: 15px; }
 
 .link-cont {
     position: relative;
@@ -754,7 +682,3 @@ a:active {
 .wrapper-19:hover .hover-19:after {
     transform: scaleX(1);
 }
-
-/* ========================================================================= */
-/* =======================================
- */

@@ -8,6 +8,14 @@
     align-items: center;
 }
 
+.project-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .project_card {
     color: #000;
     cursor: pointer;
@@ -49,6 +57,6 @@
     float: left;
     padding-left: 20px;
     background-image: linear-gradient(to right, #179be2, #6bccef);
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    margin-top: auto;
 }

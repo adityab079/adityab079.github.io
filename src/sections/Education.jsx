@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { data } from '../data';
 
 export default function Education() {
   return (
@@ -10,72 +10,47 @@ export default function Education() {
         </div>
         <br />
         <div className="timeline container">
-          <div className="timeline-item">
-            <div className="timeline-img">
-              <i className="fa fa-graduation-cap edu-icon"></i>
-            </div>
-            <div
-              className="timeline-content wow bounceInLeft"
-              style={{ color: "black", padding: "10px 30px" }}
-            >
-              <div className="row">
-                <h2
-                  className="col-8"
-                  style={{
-                    color: "black",
-                    lineHeight: "31.6px",
-                    marginBlockEnd: "0px",
-                  }}
-                >
-                  Arizona State University
-                </h2>
+          {data.education.map((edu, index) => (
+            <div className="timeline-item" key={index}>
+              <div className="timeline-img">
+                <i className="fa fa-graduation-cap edu-icon"></i>
+              </div>
                 <div
-                  className="col-4 date"
-                  style={{ textAlign: "right", width: "max-content" }}
+                  className={`timeline-content wow ${
+                    index % 2 === 0 ? 'bounceInLeft' : 'bounceInRight'
+                  } timeline-content-black`}
                 >
-                  AUG 2019 - MAY 2021
-                </div>
-              </div>
-              <br />
-              <p style={{ fontSize: "15px" }}>
-                Masters in Software Engineering
-                <br />
-              </p>
-            </div>
-          </div>
-
-          <div className="timeline-item">
-            <div className="timeline-img">
-              <i className="fa fa-graduation-cap edu-icon"></i>
-            </div>
-            <div
-              className="timeline-content wow bounceInRight"
-              style={{ color: "black", padding: "10px 30px" }}
-            >
-              <div style={{ textAlign: "right" }}>
-                <div className="row">
-                  <div className="col-4 date" style={{ textAlign: "left" }}>
-                    AUG 2015 - MAY 2019
+                  <div className={index % 2 === 0 ? 'text-left' : 'text-right'}>
+                    <div className="row">
+                      {index % 2 === 0 ? (
+                        <>
+                          <h2 className="col-8 institution-heading">
+                            {edu.institution}
+                          </h2>
+                          <div className="col-4 date date-right">
+                            {edu.period}
+                          </div>
+                        </>
+                      ) : (
+                        <>
+                          <div className="col-4 date date-left">
+                            {edu.period}
+                          </div>
+                          <h2 className="col-8 institution-heading">
+                            {edu.institution}
+                          </h2>
+                        </>
+                      )}
+                    </div>
+                    <br />
+                    <p className="font-15">
+                      {edu.degree}
+                      <br />
+                    </p>
                   </div>
-                  <h2
-                    className="col-8"
-                    style={{
-                      color: "black",
-                      lineHeight: "31.6px",
-                      marginBlockEnd: "0px",
-                    }}
-                  >
-                    University of Mumbai
-                  </h2>
                 </div>
-                <br />
-                <p style={{ fontSize: "15px" }}>
-                  Bachelor of Computer Engineering
-                  <br />
-                </p>
-              </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
       <hr />
