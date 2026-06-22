@@ -8,7 +8,6 @@ import Skills from './sections/Skills';
 import Certifications from './sections/Certifications';
 import Contacts from './sections/Contacts';
 import Footer from './sections/Footer';
-import WOW from "wowjs";
 
 const navItems = [
   ["about", "About"],

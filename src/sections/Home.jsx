@@ -13,7 +13,7 @@ export default function Home() {
               <div className="col-12">
                 <img
                   id="profile-img"
-                  src="images/IMG_2924.jpg"
+                  src="../../images/IMG_2924.jpg"
                   className="img-vresponsive rounded-circle"
                   alt="Aditya Bajaj"
                   loading="lazy"
